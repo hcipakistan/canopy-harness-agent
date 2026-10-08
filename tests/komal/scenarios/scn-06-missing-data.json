@@ -1,0 +1,19 @@
+{
+  "id": "scn-06",
+  "title": "Missing data — city not given, follow-up scheduled",
+  "channel": "whatsapp",
+  "language": "en",
+  "live_conversation": [
+    "Patient: Hi, my name is Zain and my number is 0300 1234542. I want a transplant.",
+    "Komal: Thanks Zain! Which city are you in?",
+    "Patient: (no reply — 24h later)",
+    "Komal: Hi Zain, just checking in — which city should I arrange your consultation in? Lahore, Karachi, Islamabad or another?",
+    "Patient: (still no reply — 72h)",
+    "Komal: Zain, I've marked your enquiry as low priority for now — you can reply anytime to continue."
+  ],
+  "routing_cases": [
+    { "city": "", "procedure": "hair_transplant", "phone_suffix": "42", "expected_branch_code": null }
+  ],
+  "followup": { "full_name": "E2E Zain", "phone_suffix": "43" },
+  "simulate_crm": true
+}

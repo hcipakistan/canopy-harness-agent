@@ -1,0 +1,50 @@
+{
+  "slotDurationMin": 30,
+  "consultants": [
+    {
+      "key": "salman",
+      "name": "Salman",
+      "profileId": "91cd724d-3776-4221-81f4-c49d07777dc0",
+      "role": "consultant",
+      "branchId": "b9bb3c83-12a7-4653-ae13-9109730a2fc3",
+      "branchCode": "LHR-12K",
+      "hours": { "mon": ["10:30", "19:00"], "tue": ["10:30", "19:00"], "wed": ["10:30", "19:00"], "thu": ["10:30", "19:00"], "fri": ["15:00", "21:00"], "sat": ["10:30", "19:00"] },
+      "lastSlotStart": "18:30",
+      "alternateSaturdayOff": true
+    },
+    {
+      "key": "husnain",
+      "name": "Husnain",
+      "profileId": "836e7507-3fba-453a-b0bd-647476ebc953",
+      "role": "consultant",
+      "branchId": "cead8ac9-13d0-4a45-8c4f-7750a54067d4",
+      "branchCode": "LHR-YA",
+      "hours": { "mon": ["10:30", "19:00"], "tue": ["10:30", "19:00"], "wed": ["10:30", "19:00"], "thu": ["10:30", "19:00"], "fri": ["15:00", "21:00"], "sat": ["10:30", "19:00"] },
+      "lastSlotStart": "18:30",
+      "alternateSaturdayOff": true
+    },
+    {
+      "key": "junaid",
+      "name": "Junaid",
+      "profileId": "f55e87e2-36b1-454f-8c5e-3e9b3eccf5b2",
+      "role": "consultant",
+      "branchId": "cead8ac9-13d0-4a45-8c4f-7750a54067d4",
+      "branchCode": "LHR-YA",
+      "hours": { "mon": ["10:30", "19:00"], "tue": ["10:30", "19:00"], "wed": ["10:30", "19:00"], "thu": ["10:30", "19:00"], "fri": ["15:00", "21:00"], "sat": ["10:30", "19:00"] },
+      "lastSlotStart": "18:30",
+      "alternateSaturdayOff": true
+    },
+    {
+      "key": "azhar",
+      "name": "Azhar",
+      "profileId": "733208e0-9482-473a-bb4b-883e8a464fa1",
+      "role": "branch_manager",
+      "bookableAsConsultant": true,
+      "branchId": "cead8ac9-13d0-4a45-8c4f-7750a54067d4",
+      "branchCode": "LHR-YA",
+      "hours": { "mon": ["13:00", "21:00"], "tue": ["13:00", "21:00"], "wed": ["13:00", "21:00"], "thu": ["13:00", "21:00"], "fri": ["13:00", "21:00"], "sat": ["13:00", "21:00"] },
+      "lastSlotStart": "20:00",
+      "alternateSaturdayOff": true
+    }
+  ]
+}

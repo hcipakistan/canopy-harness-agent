@@ -1,0 +1,17 @@
+{
+  "id": "scn-02",
+  "title": "Karachi surgical allocation 65/35",
+  "channel": "whatsapp",
+  "language": "en",
+  "live_conversation": [
+    "Patient: I'm in Karachi and interested in FUE. My number is 0300 1234519",
+    "Komal: Thanks! A consultant at SMCHS, Karachi will contact you. When suits you for a consultation?",
+    "Patient: Any morning next week",
+    "Komal: How about Tuesday 10:30 or 11:15 at SMCHS? I can book whichever you prefer."
+  ],
+  "routing_cases": [
+    { "city": "Karachi", "procedure": "fue", "phone_suffix": "07", "expected_branch_code": "KHI-SM", "full_name": "E2E Khi 07" },
+    { "city": "Karachi", "procedure": "fue", "phone_suffix": "19", "expected_branch_code": "KHI-PT", "full_name": "E2E Khi 19" }
+  ],
+  "simulate_crm": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "scn-07",
+  "title": "Auto-booking — intake, slot offer, booking, clash protection",
+  "channel": "whatsapp",
+  "language": "en",
+  "live_conversation": [
+    "Patient: Booking a consultation please. Usman, Lahore, 0300 1234542",
+    "Komal: Thanks Usman! Salman is available on Tuesday: 10:30, 11:15 or 12:00 at Young Again. Which works?",
+    "Patient: 10:30",
+    "Komal: Done — consultation booked for Tuesday 10:30 at Young Again, Lahore with Salman. See you then! 😊",
+    "Patient: Can I also book 10:30 again?",
+    "Komal: That slot is already taken for Salman — would 11:15 work instead?"
+  ],
+  "routing_cases": [
+    { "city": "Lahore", "procedure": "hair_transplant", "phone_suffix": "42", "expected_branch_code": "LHR-YA", "full_name": "E2E Usman Booking" }
+  ],
+  "booking": true,
+  "simulate_crm": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "scn-01",
+  "title": "Lahore surgical allocation 75/25",
+  "channel": "whatsapp",
+  "language": "en",
+  "live_conversation": [
+    "Patient: Hello! I want a hair transplant. My name is Ahmed, my number is 0300 1234547",
+    "Komal: Hello Ahmed! I'm Komal, Hair Club Pakistan's virtual assistant. Which city are you in?",
+    "Patient: Lahore",
+    "Komal: Thanks Ahmed — a consultant at Young Again, Lahore will be in touch shortly. Can I book you a consultation?",
+    "Patient: Yes please",
+    "Komal: Salman is available on Tuesday 25 August: 10:30, 11:15, or 12:00. Which works for you?"
+  ],
+  "routing_cases": [
+    { "city": "Lahore", "procedure": "hair_transplant", "phone_suffix": "47", "expected_branch_code": "LHR-12K", "full_name": "E2E Ahmed 47" },
+    { "city": "Lahore", "procedure": "hair_transplant", "phone_suffix": "42", "expected_branch_code": "LHR-YA", "full_name": "E2E Ahmed 42" }
+  ],
+  "simulate_crm": true
+}

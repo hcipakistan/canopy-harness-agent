@@ -1,0 +1,17 @@
+{
+  "id": "scn-05",
+  "title": "Islamabad surgical allocation 75/25",
+  "channel": "whatsapp",
+  "language": "en",
+  "live_conversation": [
+    "Patient: Islamabad, transplant please. 0300 1234543",
+    "Komal: Thanks! Your consultation will be with a surgeon at Beverley, Islamabad — would Tuesday work?",
+    "Patient: Yes",
+    "Komal: 10:30, 11:15 or 12:00 at Beverley. Which time suits you?"
+  ],
+  "routing_cases": [
+    { "city": "Islamabad", "procedure": "hair_transplant", "phone_suffix": "43", "expected_branch_code": "ISB-BV", "full_name": "E2E Isb 43" },
+    { "city": "Islamabad", "procedure": "hair_transplant", "phone_suffix": "42", "expected_branch_code": "ISB-DC", "full_name": "E2E Isb 42" }
+  ],
+  "simulate_crm": true
+}

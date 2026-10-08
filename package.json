@@ -1,0 +1,24 @@
+{
+  "name": "canopy-harness-agent",
+  "version": "1.0.0",
+  "description": "AI Agent system for Canopy CRM - Hair Club (Pvt) Limited",
+  "main": "dsh.config.js",
+  "scripts": {
+    "start": "npx @deepseek-ai/dsh web",
+    "harness": "npx @deepseek-ai/dsh",
+    "dev": "npx @deepseek-ai/dsh web --watch",
+    "test:komal": "node tests/komal/komal-run.mjs"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "ai-agent",
+    "crm",
+    "canopy"
+  ],
+  "author": "Shabbir Hussain",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.6.1"
+  }
+}

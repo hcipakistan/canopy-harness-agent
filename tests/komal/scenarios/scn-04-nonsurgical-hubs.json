@@ -1,0 +1,21 @@
+{
+  "id": "scn-04",
+  "title": "Non-surgical requests go to the designated hub",
+  "channel": "web_chat",
+  "language": "en",
+  "live_conversation": [
+    "Patient: Hi, I need a hair system / patch. I'm in Lahore.",
+    "Komal: Of course — hair systems are handled at our 12-K Gulberg III branch in Lahore. Would you like me to arrange a visit?",
+    "Patient: What about Islamabad?",
+    "Komal: In Islamabad, hair systems are at our Beverley Centre branch.",
+    "Patient: And Multan?",
+    "Komal: In Multan our main branch handles hair systems directly."
+  ],
+  "routing_cases": [
+    { "city": "Lahore", "procedure": "hair system", "phone_suffix": "11", "expected_branch_code": "LHR-12K", "full_name": "E2E NS Lahore" },
+    { "city": "Karachi", "procedure": "hair patch", "phone_suffix": "22", "expected_branch_code": "KHI-PT", "full_name": "E2E NS Karachi" },
+    { "city": "Islamabad", "procedure": "hair piece", "phone_suffix": "33", "expected_branch_code": "ISB-BV", "full_name": "E2E NS Islamabad" },
+    { "city": "Multan", "procedure": "non_surgical", "phone_suffix": "44", "expected_branch_code": "MUX-01", "full_name": "E2E NS Multan" }
+  ],
+  "simulate_crm": true
+}

@@ -1,0 +1,110 @@
+# ──────────────────────────────────────────────
+# 🔑 SECURITY - NEVER COMMIT THESE
+# ──────────────────────────────────────────────
+
+# Environment variables (contains your API keys!)
+.env
+.env.local
+.env.*.local
+*.env
+.env.test
+!.env.test.example
+
+# ──────────────────────────────────────────────
+# 📦 DEPENDENCIES - Too large for Git
+# ──────────────────────────────────────────────
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ──────────────────────────────────────────────
+# 🗃️ HARVEST CACHE & LOGS
+# ──────────────────────────────────────────────
+
+# Harness local cache (runtime only — NOT the skills).
+# NOTE: do NOT ignore .dsh/ wholesale. .dsh/skills/ is Komal's persona and knowledge
+# base (patient-intake, pricing, clinic-info, objection-handling, missing-data-handler,
+# hello-test) and must stay under version control — it is the assistant's brain.
+.dsh-cache/
+.dsh/sessions/
+.dsh/storage/
+.dsh/cache/
+*.log
+logs/
+*.log.*
+
+# --- Stray local files that do not belong to this workspace ---
+_workers.html
+_netlify.html
+
+# ──────────────────────────────────────────────
+# 💻 OPERATING SYSTEM FILES
+# ──────────────────────────────────────────────
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+*~
+
+# ──────────────────────────────────────────────
+# 🛠️ IDE FILES (Your editor settings)
+# ──────────────────────────────────────────────
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+*.code-snippets
+
+# IntelliJ / WebStorm / PHPStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ──────────────────────────────────────────────
+# 📦 BUILD / DISTRIBUTION FILES
+# ──────────────────────────────────────────────
+
+dist/
+build/
+out/
+*.min.js
+*.bundle.js
+*.bundle.css
+
+# ──────────────────────────────────────────────
+# 🔧 TEMPORARY FILES
+# ──────────────────────────────────────────────
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+*.rej
+
+# Local configuration files
+*.local
+*~.nib
