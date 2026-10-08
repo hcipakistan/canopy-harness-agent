@@ -5,9 +5,9 @@
   "language": "en",
   "live_conversation": [
     "Patient: Islamabad, transplant please. 0300 1234543",
-    "Komal: Thanks! Your consultation will be with a surgeon at Beverley, Islamabad — would Tuesday work?",
+    "Zara: Thanks! Your consultation will be with a surgeon at Beverley, Islamabad — would Tuesday work?",
     "Patient: Yes",
-    "Komal: 10:30, 11:15 or 12:00 at Beverley. Which time suits you?"
+    "Zara: 10:30, 11:15 or 12:00 at Beverley. Which time suits you?"
   ],
   "routing_cases": [
     { "city": "Islamabad", "procedure": "hair_transplant", "phone_suffix": "43", "expected_branch_code": "ISB-BV", "full_name": "E2E Isb 43" },

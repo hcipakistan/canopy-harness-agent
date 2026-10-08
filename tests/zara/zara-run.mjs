@@ -1,4 +1,4 @@
-// komal-run.mjs — L4 suite for the Komal AI assistant.
+// zara-run.mjs — L4 suite for the Zara AI assistant.
 //
 // Three phases:
 //   1. Config ↔ DB consistency   — config/branches.json codes/cities exist in Supabase
@@ -10,7 +10,7 @@
 //   4. Transcripts               — prints the live-agent dialogues for manual runs
 //
 // Run from the agent workspace root:
-//   node tests/komal/komal-run.mjs     (or: npm run test:komal)
+//   node tests/zara/zara-run.mjs     (or: npm run test:zara)
 
 import { readdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -20,7 +20,7 @@ import {
   env, section, check, warn, finish, runCleanup, register,
   selectRows, insertRow, deleteRows, rpc, testPhone,
   createTestUser, deleteTestUser,
-} from './komal-lib.mjs';
+} from './zara-lib.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const scenariosDir = join(here, 'scenarios');
@@ -87,7 +87,7 @@ async function simulateIntake(scn, c) {
     `branch=${got.branchCode} (${got.reason})`);
   check(`${scn.id}: source=whatsapp, stage=new`, lead.source === 'whatsapp' && lead.stage === 'new');
 
-  // 4. Message log: the patient's first line in, Komal's greeting out.
+  // 4. Message log: the patient's first line in, Zara's greeting out.
   const firstLine = scn.live_conversation?.[0]?.replace(/^Patient:\s*/, '') ?? 'Hello, I would like a consultation';
   const inbound = await insertRow('wa_messages', {
     lead_id: lead.id, direction: 'inbound', from_number: phone, to_number: '+923000000000',
@@ -140,7 +140,7 @@ async function simulateBooking(scn, lead) {
   // A consultant at the routed branch (staging seeds none).
   let consultant = null;
   try {
-    consultant = await createTestUser({ role: 'consultant', branchId: branch.id, isCentral: false, fullName: 'E2E Komal Consultant' });
+    consultant = await createTestUser({ role: 'consultant', branchId: branch.id, isCentral: false, fullName: 'E2E Zara Consultant' });
     register(() => deleteTestUser(consultant.userId));
   } catch (e) {
     warn(`${scn.id}: booking skipped`, `no consultant: ${e.message}`);
@@ -172,7 +172,7 @@ async function simulateBooking(scn, lead) {
 }
 
 (async () => {
-  section(`L4 · Komal — ${env.url} (staging recommended)`);
+  section(`L4 · Zara — ${env.url} (staging recommended)`);
 
   // --- 1. Config ↔ DB consistency -------------------------------------------
   const cfg = JSON.parse(readFileSync(join(root, 'config', 'branches.json'), 'utf8')).branches;
@@ -207,13 +207,13 @@ async function simulateBooking(scn, lead) {
   }
 
   // --- 4. Live-agent transcripts ---------------------------------------------
-  section('4 · Live-agent transcripts (paste into the Komal chat to verify manually)');
+  section('4 · Live-agent transcripts (paste into the Zara chat to verify manually)');
   for (const f of files) {
     const scn = JSON.parse(readFileSync(join(scenariosDir, f), 'utf8'));
     console.log(`\n— ${scn.id}: ${scn.title} (${scn.channel}, ${scn.language})`);
     for (const line of scn.live_conversation ?? []) console.log('   ' + line);
   }
 
-  finish('L4 · Komal');
+  finish('L4 · Zara');
   await runCleanup();
 })();

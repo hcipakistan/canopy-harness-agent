@@ -5,11 +5,11 @@
   "language": "en",
   "live_conversation": [
     "Patient: Hi, my name is Zain and my number is 0300 1234542. I want a transplant.",
-    "Komal: Thanks Zain! Which city are you in?",
+    "Zara: Thanks Zain! Which city are you in?",
     "Patient: (no reply — 24h later)",
-    "Komal: Hi Zain, just checking in — which city should I arrange your consultation in? Lahore, Karachi, Islamabad or another?",
+    "Zara: Hi Zain, just checking in — which city should I arrange your consultation in? Lahore, Karachi, Islamabad or another?",
     "Patient: (still no reply — 72h)",
-    "Komal: Zain, I've marked your enquiry as low priority for now — you can reply anytime to continue."
+    "Zara: Zain, I've marked your enquiry as low priority for now — you can reply anytime to continue."
   ],
   "routing_cases": [
     { "city": "", "procedure": "hair_transplant", "phone_suffix": "42", "expected_branch_code": null }

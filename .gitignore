@@ -26,7 +26,7 @@ pnpm-debug.log*
 # ──────────────────────────────────────────────
 
 # Harness local cache (runtime only — NOT the skills).
-# NOTE: do NOT ignore .dsh/ wholesale. .dsh/skills/ is Komal's persona and knowledge
+# NOTE: do NOT ignore .dsh/ wholesale. .dsh/skills/ is Zara's persona and knowledge
 # base (patient-intake, pricing, clinic-info, objection-handling, missing-data-handler,
 # hello-test) and must stay under version control — it is the assistant's brain.
 .dsh-cache/

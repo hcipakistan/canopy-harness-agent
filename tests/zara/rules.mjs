@@ -1,4 +1,4 @@
-// tests/komal/rules.mjs — the branch-routing and allocation rules Komal must
+// tests/zara/rules.mjs — the branch-routing and allocation rules Zara must
 // follow, extracted from .dsh/skills/patient-intake.md as PURE functions.
 //
 // The scenarios contract-test these against hand-computed expectations from

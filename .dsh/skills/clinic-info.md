@@ -68,7 +68,7 @@ recovery at the consultation.
 
 <!-- ============================================================
      NEEDS CLINIC INPUT — fill these in before go-live, then delete this comment.
-     Until filled, Komal must NOT answer these questions; redirect to the consultant/branch.
+     Until filled, Zara must NOT answer these questions; redirect to the consultant/branch.
 
      [CONFIRM] Consultation fee (Rs):            ______  (also required by PHC MSDS PRE-2, must be displayed)
      [CONFIRM] Is the consultation fee waived/deducted if the patient proceeds? ______

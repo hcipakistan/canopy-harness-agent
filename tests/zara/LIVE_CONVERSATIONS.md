@@ -1,8 +1,8 @@
-# Komal — live-agent conversation scripts (manual L4 verification)
+# Zara — live-agent conversation scripts (manual L4 verification)
 
-The `komal-run.mjs` suite proves the **rules and CRM contract** automatically. This
+The `zara-run.mjs` suite proves the **rules and CRM contract** automatically. This
 file is for the other half of L4: verifying the **live agent** behaves as documented.
-Open the Komal chat (the DSH web GUI in this workspace, or the WhatsApp bridge) and run
+Open the Zara chat (the DSH web GUI in this workspace, or the WhatsApp bridge) and run
 each transcript, then tick the expected outcome.
 
 ## scn-01 · Lahore surgical 75/25 (WhatsApp, EN)
@@ -11,7 +11,7 @@ each transcript, then tick the expected outcome.
 Patient: Hello! I want a hair transplant. My name is Ahmed, my number is 0300 1234547
 Patient: I'm in Lahore
 ```
-- [ ] Komal greets as **Komal**, warm, one question at a time
+- [ ] Zara greets as **Zara**, warm, one question at a time
 - [ ] Lead created: full_name=Ahmed, mobile `+923001234547`, city Lahore, source whatsapp
 - [ ] Branch = **12-K Gulberg (LHR-12K)** — last two digits 47 → 47 % 4 = 3 → the 25% bucket
 - [ ] Repeat with a number ending **42** → branch = **Young Again (LHR-YA)** (75% bucket)
@@ -30,7 +30,7 @@ Patient: I'm in Karachi and interested in FUE. My number is 0300 1234507
 Patient: السلام علیکم! مجھے PRP کروانا ہے، کراچی سے ہوں
 Patient: Bilal Khan, 0300 1234547
 ```
-- [ ] Komal replies in **Urdu**
+- [ ] Zara replies in **Urdu**
 - [ ] Lead routes to **SMCHS (KHI-SM)** regardless of phone digits (PRP 100%)
 
 ## scn-04 · Non-surgical hubs (web chat, EN)
@@ -53,7 +53,7 @@ Patient: Islamabad, transplant please. 0300 1234543
 ```
 Patient: Hi, my name is Zain and my number is 0300 1234542. I want a transplant.
 ```
-- [ ] Komal asks for the city **once**, then stops (no question spam)
+- [ ] Zara asks for the city **once**, then stops (no question spam)
 - [ ] After 24h: exactly ONE gentle follow-up, then a second at 48h, then "marked low" at 72h
 - [ ] Lead stays `new`, city empty until provided
 
@@ -62,9 +62,9 @@ Patient: Hi, my name is Zain and my number is 0300 1234542. I want a transplant.
 ```
 Patient: Booking a consultation please. Usman, Lahore, 0300 1234542
 ```
-- [ ] Komal offers **3 free slots** from the availability check (node _availability.cjs)
+- [ ] Zara offers **3 free slots** from the availability check (node _availability.cjs)
 - [ ] On selection, booking lands on the calendar; consultant notified; lead → consult_booked
-- [ ] Booking the SAME slot again → Komal apologises and offers the next free slot
+- [ ] Booking the SAME slot again → Zara apologises and offers the next free slot
 
 ## Pricing guardrail (any channel)
 

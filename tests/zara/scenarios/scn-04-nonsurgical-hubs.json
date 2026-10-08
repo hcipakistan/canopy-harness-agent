@@ -5,11 +5,11 @@
   "language": "en",
   "live_conversation": [
     "Patient: Hi, I need a hair system / patch. I'm in Lahore.",
-    "Komal: Of course — hair systems are handled at our 12-K Gulberg III branch in Lahore. Would you like me to arrange a visit?",
+    "Zara: Of course — hair systems are handled at our 12-K Gulberg III branch in Lahore. Would you like me to arrange a visit?",
     "Patient: What about Islamabad?",
-    "Komal: In Islamabad, hair systems are at our Beverley Centre branch.",
+    "Zara: In Islamabad, hair systems are at our Beverley Centre branch.",
     "Patient: And Multan?",
-    "Komal: In Multan our main branch handles hair systems directly."
+    "Zara: In Multan our main branch handles hair systems directly."
   ],
   "routing_cases": [
     { "city": "Lahore", "procedure": "hair system", "phone_suffix": "11", "expected_branch_code": "LHR-12K", "full_name": "E2E NS Lahore" },

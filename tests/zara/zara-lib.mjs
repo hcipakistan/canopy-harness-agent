@@ -1,4 +1,4 @@
-// tests/komal/komal-lib.mjs — small shared harness for the Komal L4 suite.
+// tests/zara/zara-lib.mjs — small shared harness for the Zara L4 suite.
 //
 // Reads TEST_* variables from .env.test (this workspace root) and falls back
 // to the agent's own .env. Prefer .env.test pointing at STAGING — the live
@@ -88,8 +88,8 @@ export function testPhone(suffix = '00') {
 }
 
 /** Create a real auth user + profile (Admin API), for booking/assignment tests. */
-export async function createTestUser({ role = 'cso', branchId = null, isCentral = true, fullName = 'E2E Komal User' } = {}) {
-  const email = `komal-e2e-${Date.now()}-${Math.floor(Math.random() * 1e6)}@test.hairclub.local`;
+export async function createTestUser({ role = 'cso', branchId = null, isCentral = true, fullName = 'E2E Zara User' } = {}) {
+  const email = `zara-e2e-${Date.now()}-${Math.floor(Math.random() * 1e6)}@test.hairclub.local`;
   const password = 'E2eTest!2026';
   const r = await rest('/auth/v1/admin/users', {
     method: 'POST',
